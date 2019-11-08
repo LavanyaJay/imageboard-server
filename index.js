@@ -6,6 +6,6 @@ const db = require("./db");
 
 const Image = require("./Image/model");
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 5000, () => {
 	console.log("Listening on port", +port);
 });
